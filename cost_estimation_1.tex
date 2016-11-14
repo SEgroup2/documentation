@@ -1,0 +1,271 @@
+\documentclass[12pt]{article}
+\usepackage{hyperref}
+\usepackage[title]{appendix}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{tabu}
+\usepackage[table]{xcolor}
+\usepackage[english]{babel}
+
+
+\graphicspath{{../images/}}
+
+\setlength{\arrayrulewidth}{1mm}
+\setlength{\tabcolsep}{18pt}
+\renewcommand{\arraystretch}{1.6}
+\def\mydate{October 14, 2016}
+
+\begin{document}
+	
+	\begin{titlepage}
+		\begin{center}
+			
+			%\vspace*{1cm}
+			
+			\LARGE{\textbf{Software Cost Estimation}}
+			
+			\vspace{1.5cm}
+			
+			\textbf{C-TALK}\\
+			
+			\vspace{2cm}
+		 
+        \large{\textbf{Author:}}\\
+			  \large{ \\ Anjali Kumari(201452042)\\}	
+			  
+			  
+			\vspace{1.5cm}
+			\mydate{}
+			
+			
+			\vspace{5cm}
+			\includegraphics[width=0.17\textwidth]{IIIt_logo.png} \\
+			\Large{Indian Institute of Information Technology Vadodara} \\
+			
+		\end{center}
+	\end{titlepage}
+	\textbf{Team members :} \\
+		\begin{center}
+		
+		\begin{tabular}{ |m{10em} m{8em} m{9em}|}
+			\hline
+			TEAM MEMBER          &   & ID        \\
+			\hline
+			Bhoopendra Singh     &   & 201452020 \\
+			Shikhar Dhing        &   & 201452021 \\
+			Venkata Sandeep      &   & 201452037 \\
+			Anjali Kumari        &   & 201452042 \\
+			Vipin Sahu           &   & 201452051 \\
+			Prahlad              &   & 201452052 \\ 
+			Sachin Jangid        &   & 201452060 \\
+			Sunny Sankhlecha     &   & 201452061 \\
+			Kenneth Tenny        &   & 201452066 \\
+			\hline
+		\end{tabular}
+		
+	\end{center}
+	\vspace{2em}
+	
+	\textbf{Revision History}
+	\begin{center}
+		\rowcolors{3}{green!80!yellow!50}{green!70!yellow!40}
+		\begin{tabular}{ | m{3em} | m{8em} | m{5em} | m{4em} | m{4em} | }
+			\hline
+			Version & Description & Date       & Authors            & Reviewers \\
+			\hline
+			2.1     & Software Cost Estimation    & 14/10/2016 & Anjali kumari & Kenneth Tenny  \\ 
+
+			\hline
+		
+		\end{tabular}
+	\end{center}
+	
+	\newpage
+	\hline
+\tableofcontents
+\newpage
+
+\section{Purpose}
+
+The purpose of this document is to estimate effort and development time for project in order to keep track of project's progress and money invested.\\
+
+\section{Introduction}
+Software cost estimation is the process of predicting the amount effort required to build a software system. There are various techniques used in software cost estimation. We are planning to achieve this goal by using basic COCOMO model. COCOMO stands for Constructive Cost Model, it is a software cost estimation model. By using COCOMO we can calculate the amount of effort and the development time for projects. COCOMO uses three model to estimate effort and development time and these are as follows:
+
+\begin{itemize}
+ \item Basic COCOMO  \\
+2Intermediate COCOMO \\
+3. Detailed COCOMO    \\
+\end{itemize}
+
+We are using Intermidiate COCOMO model for our projcet. Since Intermidiate COCOMO model considere other factor namely  "14 Cost Driver" along with project size, which can affect overall estimated cost. Those cost drivers are:
+\begin{enumerate}
+
+  \begin{itemize}
+    \item Product attributes:The characteristics of the product that are considered include the inherent complexity of the product, reliability requirements of the product, etc.
+    \end{itemize}
+    
+     \item Required software reliability
+    \item   Size of application database
+    \item   Complexity of the product
+    
+ \begin{itemize}
+    \item Hardware attributes:Characteristics of the computer that are considered include the execution speed required, storage space required etc.
+ \end{itemize}
+ 
+\item  Run-time performance constraints
+\item Memory constraints
+\item Volatility of the virtual machine environment
+\item Required turnabout time
+
+
+\begin{itemize}
+   
+\item Personnel attributes:The attributes of development personnel that are considered include
+the experience level of personnel, programming capability, analysis capability,
+etc.
+\end{itemize}
+
+\item Analyst capability
+\item Software engineering capability
+\item Applications experience
+\item Virtual machine experience
+\item Programming language experience
+
+\begin{itemize}
+   
+\item Project attributes:Development environment attributes capture the
+development facilities available to the developers. An important parameter that is considered is the sophistication of the automation (CASE) tools used for software development.
+\end{itemize}
+
+\item Use of software tools
+\item Application of software engineering methods
+\item Required development schedule
+
+
+\end{enumerate}
+
+We can calculate the estimated value by using formula:\\ 
+$
+\\E=a(KLOC)^b  [person-month]
+$
+
+$\\D.T. = x(Effort)^y   [month]$ \\ \\
+where $ E = Effort,  D.T = Development Time, KLOC=  Kilo Of Lines Of Code,$\\
+ Values of a,b depends on mode of software project as shown below:\\
+ 
+ \textbf{Modes Of Software Project}
+ Every project can be mapped to a particular category and those category are :\\
+ \begin{itemize}
+    
+
+ \item Basic
+ \item Semi-detached
+ \item Embedded
+  \end{itemize}
+ 
+  Our project falls under Semi-detached mode since our group consists of a mixture of experienced and inexperienced members and team members have limited experience on related systems and also we are unfamiliar with some aspects of the system being developed. \\
+  
+ \begin{tabular}{c c c c c}
+  \textbf{Software Project Mode} & a &b & x & y \\ \\
+ 
+ \textbf{Organic} & 3.2 & 1.05 & 2.5 & 0.38  \\ \\
+ \textbf{Semi-detached} & 3.0 & 1.12 & 2.5 & 0.35\\ \\
+ \textbf{Embedded} & 2.8 & 1.2  & 2.5 & 0.32\\ \\
+ 
+ \end{tabular}\\ \\
+ 
+ \section{Cost Drivers}
+ All the 15 cost drivers is rated from low to very high depending on how these factor affect our cost and effort estimation of our project.
+ 
+ \includegraphics{costpic}
+ 
+ \section{Cost Drivers Rating for calculation of EAF}
+\begin{tabular}{|c|c|}
+\hline \textbf{Cost Driver attribute} & \textbf{Rating}\\
+\hline {Required software reliability} & 1\\
+\hline Size of application database & 1.08\\
+\hline Complexity of the product & 1\\
+\hline Run-time performance constraints & 1 \\
+\hline Memory constraints & 1\\
+\hline Volatility of the virtual machine environment & 0.87\\
+\hline Required turnabout time & 1\\
+\hline Analyst capability & 1.19\\
+\hline Software engineering capability & 1.13\\
+\hline Applications experience & 1.17\\
+\hline Virtual machine experience  & 0.90\\
+\hline Programming language experience & 0.95\\
+\hline Use of software tools  & 0.91\\
+\hline Application of software engineering methods & 0.91\\
+\hline
+
+
+
+\end{tabular}
+\newpage
+\section{Estimation of Lines Of Code}
+
+To accomplish our project, we are using following programming language:
+\begin{itemize}
+   
+\item HTML
+\item CSS
+
+\item JavaScript
+\item NodeJS
+
+\end{itemize}
+
+\textbf{Table-1: Estimation Of Lines Of Code:}\\ 
+\begin{tabular}{|c|c|}
+\hline \textbf{Programming Language} & \textbf{Approx. Lines of code} \\
+
+\hline \textbf{HTML}           & 1000-1200 \\
+\hline \textbf{CSS}            & 700-800 \\
+
+\hline \textbf{JavaScript}     & 600-800 \\
+\hline \textbf{Nodejs}         & 500-700 \\
+
+ \hline \textbf{Total LOC}     &2800-3500 \\\hline 
+\end{tabular}\\ \\
+
+\section{Estimation process}
+\textbf{Minimum} $ LOC = 2800 $\\
+Minimum $ KLOC= 2.8 $\\
+$ EAF = \(1*1.08*1*1*1*0.87*1*1.19* 1.13*1.17* 0.90*0.95*0.91*0.91*1.04\) = 1.088 $ \\ 
+
+For Semi-detached  \\ $Effort = 3.0*(KLOC)^\(1.12\) PM $ \\
+ $ Effort = 3.0*(2.8)^\(1.12\) * EAF PM $  \\
+ $Effort = 3.0*(2.8)^\(1.12\) * 1.088 PM $ \\
+  $Effort = 9.504 * 1.088 PM $  \\ 
+  $Effort = 10.34 PM $\\ \\ 
+  $ D.T = 2.5(10.34)^\(0.35\) = 5.66 [MONTH] $ \\  \\
+  
+\textbf{Maximum} $ LOC = 3500 $\\
+Maximum $ KLOC= 3.5 $\\
+$ EAF = \(1*1.08*1*1*1*0.87*1*1.19* 1.13*1.17* 0.90*0.95*0.91*0.91*1.04\) = 1.088 $ \\ 
+
+For Semi-detached  \\ $Effort = 3.0*(KLOC)^\(1.12\) PM $ \\
+ $ Effort = 3.0*(3.5^\(1.12\) * EAF PM $  \\
+ $Effort = 3.0*(3.5)^\(1.12\) * 1.088 PM $ \\
+  $Effort = 12.203 * 1.088 PM $  \\ 
+  $Effort = 13.277 PM $\\ \\ 
+  
+  $ D.T = 2.5(13.277)^\(0.35\)= 6.18  [MONTH] $ \\
+
+\section{References}
+\begin{itemize}
+   
+
+\item http://www.computing.dcu.ie/~renaat/ca421/report.html
+\end{itemize}\\
+\begin{itemize}
+   
+
+\item 
+http://nptel.ac.in/courses/Webcourse-contents/IITKharagpur/Soft Engg/pdf/m11L28.pdf
+\end{itemize}\\
+	
+	
+
+\end{document}
