@@ -1,0 +1,221 @@
+\documentclass[journal,12pt,onecolumn,draftclsnofoot,]{IEEEtran}
+\usepackage{blindtext}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multicol}
+\usepackage{parallel,enumitem}
+\usepackage{pgfgantt}
+\usepackage{pdflscape}
+\usepackage{pgfcalendar}
+\usepackage[margin=0.4in]{geometry}
+\usepackage{datetime}
+\usepackage{lscape}
+\usepackage{vhistory}
+\usepackage{pdflscape}
+
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+\newdate{date01}{13}{08}{2016}
+\newdate{date02}{14}{08}{2016}
+\newdate{date03}{18}{08}{2016}
+\newdate{date04}{25}{08}{2016}
+\newdate{date05}{20}{08}{2016}
+\newdate{date06}{22}{08}{2016}
+\newdate{date07}{23}{08}{2016}
+\newdate{date08}{24}{08}{2016}
+\newdate{date09}{25}{08}{2016}
+\newdate{date10}{27}{08}{2016}
+\newdate{date11}{28}{08}{2016}
+\newdate{date12}{29}{08}{2016}
+\newdate{date13}{31}{08}{2016}
+\newdate{date14}{01}{09}{2016}
+\newdate{date15}{02}{09}{2016}
+\newdate{date16}{07}{09}{2016}
+\newdate{date17}{17}{09}{2016}
+\newdate{date18}{23}{09}{2016}
+\newdate{date19}{26}{09}{2016}
+\newdate{date20}{27}{09}{2016}
+\newdate{date21}{29}{09}{2016}
+\newdate{date22}{01}{10}{2016}
+\newdate{date23}{03}{10}{2016}
+\newdate{date24}{09}{10}{2016}
+\newdate{date25}{12}{10}{2016}
+\newdate{date26}{22}{10}{2016}
+\newdate{date27}{29}{10}{2016}
+\newdate{date28}{02}{11}{2016}
+\newdate{date29}{03}{11}{2016}
+\newdate{date30}{06}{11}{2016}
+\newdate{date31}{08}{11}{2016}
+\newdate{date32}{09}{11}{2016}
+\newdate{date33}{10}{11}{2016}
+\title{Gantt Chart \\  SE IT Group 2}
+\author{Karra Venkata Sandeep|201452037\\Sai Prahlad|201452052}
+
+\begin{document}
+\maketitle
+ Team Members
+ 
+ 
+\begin{tabular}{|c|c|}
+     \hline
+     201452020 &
+BHOOPENDRA SINGH \\
+\hline
+201452021 &
+SHIKHAR DHING \\
+\hline
+201452037 &
+KARRA VENKATA SANDEEP\\
+\hline 
+201452042 & 
+ANJALI KUMARI \\
+\hline 201452051
+ & VIPIN KUMAR SAHU \\ 
+ \hline
+201452052 &
+BHOGADI PRAHLAD \\ \hline
+201452060 &
+SACHIN
+JANGID \\ \hline
+201452061 &
+SUNNY
+SANKHLECHA \\ \hline
+ 201452066 &
+KENNETH 
+TENNY  \\ \hline
+ \end{tabular}
+ 
+
+ 
+ 
+\begin{tabular}{||c c c||} 
+ \hline
+ Index & Phase & Duration \\ [0.5ex] 
+ 
+ \hline\hline
+ 1.0 & Team Development Phase & \displaydate{date01} to \displaydate{date02} \\
+ 
+ \hline
+ 
+ 1.1 & Similarities and Differences & \displaydate{date01} \\
+ 
+ \hline
+ 
+ 1.2 & Strength and Weakness & \displaydate{date01} \\
+ \hline
+ 1.3 & Deciding Norms & \displaydate{date02} \\
+ \hline\hline
+ 
+ 2.0 & Project Initiation & \displaydate{date03} to \displaydate{date04}   \\ 
+ \hline
+2.1 & Idea Discussion & \displaydate{date03} to \displaydate{date05} \\
+  \hline
+  2.2 & Feasibility Study of Ideas & \displaydate{date03} to \displaydate{date07} \\
+ \hline
+ 2.3 & Project Definition & \displaydate{date08} to \displaydate{date09}\\
+ \hline
+ 2.4 &Feasibility of Project & \displaydate{date10} to \displaydate{date13}\\
+ \hline
+ 2.5 & Project proposal & \displaydate{date14} to \displaydate{date15} \\
+ \hline\hline
+ 3.0 &Analysis Requirement gathering & \displaydate{date15} to \displaydate{date20}  \\
+\hline
+3.1 &Questionnaires  & \displaydate{date15} to \displaydate{date16} \\
+\hline
+3.2 &Survey & \displaydate{date17} to \displaydate{date19} \\
+\hline
+3.3 & SRS Documentation & \displaydate{date18} to \displaydate{date19}
+\\
+\hline
+3.4 & Project Plan & \displaydate{date18} to \displaydate{date19}
+\\
+\hline
+3.5 & Requirement  Traceability Matrix &\displaydate{date19} to \displaydate{date20}\\
+\hline\hline
+4.0 & Design & \displaydate{date19} to \displaydate{date24} \\
+\hline
+4.1 & SDLC Model &  \displaydate{date19} to \displaydate{date20}\\
+\hline
+4.2 & Cost Estimation &  \displaydate{date19} to \displaydate{date20}\\
+\hline
+4.3 & System Design &  \displaydate{date27} to \displaydate{date22}\\
+\hline
+4.4 & Detailed Design & \displaydate{date23} to \displaydate{date24}\\
+\hline
+
+4.5 & Designing Approach & \displaydate{date24} to \displaydate{date25} \\
+ \hline\hline
+
+5.0 & Implementation &  \displaydate{date25} to \displaydate{date28}\\
+\hline
+5.1 & Coding &  \displaydate{date25} to \displaydate{date27} \\
+\hline
+5.2 & Unit Testing &  \displaydate{date26} to \displaydate{date28} \\
+\hline
+5.3 & Testing &  \displaydate{date29} to \displaydate{date30} \\
+\hline\hline 
+6.0 & Acceptance Validation &  \displaydate{date30} to \displaydate{date31} \\
+\hline
+6.1 & Validation & \displaydate{date30} to \displaydate{date31}  \\
+\hline
+6.2 & Configuration Plan & \displaydate{date32} to \displaydate{date33} \\
+\hline
+6.3 & Deployment Plan & \displaydate{date32} to \displaydate{date33} \\
+\hline\hline
+
+
+ 
+ 
+\end{tabular}
+
+\newpage
+\begin{landscape}
+\definecolor{barblue}{RGB}{153,204,254}
+\definecolor{groupblue}{RGB}{51,102,254}
+\definecolor{linkred}{RGB}{165,0,33}
+\renewcommand\sfdefault{phv}
+\renewcommand\mddefault{mc}
+\renewcommand\bfdefault{bc}
+\setganttlinklabel{s-s}{START-TO-START}
+\setganttlinklabel{f-s}{FINISH-TO-START}
+\setganttlinklabel{f-f}{FINISH-TO-FINISH}
+\sffamily
+\\
+\\
+\\
+\\
+\begin{ganttchart}[
+  hgrid,
+  vgrid,
+  time slot format=isodate,
+  ]{2016-08-13}{2016-09-27}
+\gantttitlecalendar{month, week, date} \\
+\ganttbar{1.0 TEAM}{2016-08-13}{2016-08-14} \\
+\ganttbar{1.1 S&D}{2016-08-13}{2016-08-13} \\
+\ganttbar{1.2 S&W}{2016-08-13}{2016-08-13} \\
+\ganttbar{1.3 DN}{2016-08-14}{2016-08-14} \\
+\ganttbar{2.0 PI}{2016-08-18}{2016-08-25} \\\ganttbar{2.1 ID}{2016-08-18}{2016-08-20} \\\ganttbar{2.2 FSI}{2016-08-18}{2016-08-23} \\\ganttbar{2.3 PD}{2016-08-24}{2016-08-25} \\\ganttbar{2.4 FP}{2016-08-27}{2016-08-31} \\\ganttbar{2.5 pp}{2016-09-01}{2016-09-02} \\
+\ganttbar{3.0 ARG}{2016-09-02}{2016-09-27} \\\ganttbar{3.1 Q'ire}{2016-09-02}{2016-09-07} \\\ganttbar{3.2 Survey}{2016-09-17}{2016-09-26} \\\ganttbar{3.3 SRS}{2016-09-23}{2016-09-26} \\\ganttbar{3.4 PrP}{2016-09-23}{2016-09-26} \\\ganttbar{3.5 RTM}{2016-09-26}{2016-09-27} \\
+
+
+\end{ganttchart}
+\newpage
+\begin{ganttchart}[
+  hgrid,
+  vgrid,
+  time slot format=isodate,
+  ]{2016-09-26}{2016-11-10}
+\gantttitlecalendar{month, week, date} \\
+\ganttbar{4.0 Design}{2016-09-26}{2016-10-09} \\
+\ganttbar{4.1 SDLC}{2016-09-26}{2016-09-27} \\
+\ganttbar{4.2 CE}{2016-09-26}{2016-09-27} \\
+
+\ganttbar{4.3 SD}{2016-09-29}{2016-10-01} \\
+\ganttbar{4.4 DD}{2016-10-03}{2016-10-09} \\
+\ganttbar{4.5 DA}{2016-10-9}{2016-10-12} \\
+\ganttbar{5.0 IM}{2016-10-12}{2016-11-02} \\
+\ganttbar{5.1 CD}{2016-10-12}{2016-10-29} \\\ganttbar{5.2 UT}{2016-10-22}{2016-11-02} \\\ganttbar{5.3 TS}{2016-11-03}{2016-11-06} \\\ganttbar{6.0 AV}{2016-11-06}{2016-11-08} \\\ganttbar{6.1 VA}{2016-11-06}{2016-11-08} \\\ganttbar{6.2 CP}{2016-11-09}{2016-11-10} \\\ganttbar{6.3 DP}{2016-11-09}{2016-11-10} \\
+
+\end{ganttchart}
+\end{landscape}
+\end{document}
