@@ -68,7 +68,7 @@ The application shall allow student/professor to sign into their account using t
 \subsection{User Characteristics}
 \begin{enumerate}
 \item Student : Student can ask different questions anonymously, answer a question, upvote/downvote a question.
-\item Professor: Professor can answer a question and  give a particular answer 'verified badge', if he finds it appropiate.
+\item Professor: Professor can answer a question.
 \end{enumerate} 
 
 \subsection{General Constraints}
@@ -102,7 +102,7 @@ Each user will have a personalized feed as per his/her topics of interests of an
 \subsubsection{Users}
 \begin{itemize}
 \item Students will get feed of anwers/question pair from all topics of interest.
-\item Professor will get feed of questions (of topics related to his field) to be answered.
+\item Professor can also see the new answers and can upvote answers of others.
 \end{itemize}
 \subsubsection{Precondition}
 The user must have logged in.
@@ -110,8 +110,6 @@ The user must have logged in.
 \begin{itemize}
 \item User can share an answer on social-networking sites.
 \item Student can upvote/downvote an answer.
-\item Professor can mark an answer verified.
-\item User can report a question spam/out of context.
 \end{itemize}
 
 \subsection{UC-3:Questions List}
@@ -125,26 +123,12 @@ All users who want to use the application.
 The user must have logged in.
 \subsubsection{Basic Course of Event}
 \begin{itemize}
-\item User can click on the answer button.
-\item User can then write the answer and submit the answer.
+\item User can go to the question page.
+\item User can see all the questions which can be answered.
 \end{itemize}
 
-\subsection{UC-4:Notification}
-\subsubsection{Summary}
-All the important events will be notified to the user on this page.
-\subsubsection{Rational}
-If an answer is given, the author of question will get a notification. If a professor answers/verifies a question, notification will be sent to all the students who follow that topic. When a new question is added, then the notification is sent to the professor of related topic.
-\subsubsection{Users}
-All users who want to use the application.
-\subsubsection{Precondition}
-The user must have logged in and must be follwing a topic.
-\subsubsection{Basic Course of Event}
-\begin{itemize}
-\item User can see list of all the notifications.
-\item User can click on a notification link to go to related question/answer link.
-\end{itemize}
 
-\subsection{UC-5:Profile}
+\subsection{UC-4:Profile}
 \subsubsection{Summary}
 This page will show detail of a user and he/she can change his/her password, edit topics of interest.
 \subsubsection{Rational}
@@ -188,7 +172,6 @@ This section includes the requirements that specify all the fundamental actions 
 \item Profile: A user can view and edit his /her profile with options like password,topics of interest.
 \item Feed: When the user login, he/she will be redirected to this page, consisting of list of question/answer pairs personalized according to user.
 \item Question List: A list of questions that user can answer, personalized according to user's topic of interest.
-\item Notification Panel: List of all important activities happening on the platform related to the user.
 \end{itemize}
 
 \section{Non Functional Requirements}
