@@ -1,0 +1,108 @@
+\documentclass[12pt]{article}
+\usepackage{hyperref}
+\usepackage[title]{appendix}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{tabu}
+\usepackage[table]{xcolor}
+\usepackage[english]{babel}
+
+
+\graphicspath{{../images/}}
+
+\setlength{\arrayrulewidth}{1mm}
+\setlength{\tabcolsep}{18pt}
+\renewcommand{\arraystretch}{1.6}
+\def\mydate{November 11, 2016}
+
+\begin{document}
+	
+	\begin{titlepage}
+		\begin{center}
+			
+			%\vspace*{1cm}
+			
+			\LARGE{\textbf{Deployment Plan}}
+			
+			\vspace{1.5cm}
+			
+			\textbf{C-TALK}\\
+			
+			\vspace{2cm}
+		 
+        \large{\textbf{Author:}}\\
+			  \large{ \\ Sachin Jangid(201452060) \\ Bhoopendra Singh(201452020)\\}	
+			  
+			  
+			\vspace{1.5cm}
+			\mydate{}
+			
+			
+			\vspace{5cm}
+			\includegraphics[width=0.17\textwidth]{IIIt_logo.png} \\
+			\Large{Indian Institute of Information Technology Vadodara} \\
+			
+		\end{center}
+	\end{titlepage}
+	\textbf{Team members :} \\
+		\begin{center}
+		
+		\begin{tabular}{ |m{10em} m{8em} m{9em}|}
+			\hline
+			TEAM MEMBER          &   & ID        \\
+			\hline
+			Bhoopendra Singh     &   & 201452020 \\
+			Shikhar Dhing        &   & 201452021 \\
+			Venkata Sandeep      &   & 201452037 \\
+			Anjali Kumari        &   & 201452042 \\
+			Vipin Sahu           &   & 201452051 \\
+			Prahlad              &   & 201452052 \\ 
+			Sachin Jangid        &   & 201452060 \\
+			Sunny Sankhlecha     &   & 201452061 \\
+			Kenneth Tenny        &   & 201452066 \\
+			\hline
+		\end{tabular}
+		
+	\end{center}
+	\vspace{2em}
+	
+	\textbf{Revision History}
+	\begin{center}
+		\rowcolors{3}{green!80!yellow!50}{green!70!yellow!40}
+		\begin{tabular}{ | m{3em} | m{8em} | m{5em} | m{4em} | m{4em} | }
+			\hline
+			Version & Description & Date       & Authors             \\
+			\hline
+			2.1     & Deploment Plan    & 11/11/2016 & Sachin Jangid, Bhoopendra Singh   \\ 
+
+			\hline
+		
+		\end{tabular}
+	\end{center}
+	
+	\newpage
+	\hline
+\tableofcontents
+\newpage
+
+\section{Introduction}
+A Deployment plan is a technical document that provides a view of the overall structure of project. 
+\\
+
+\subsection{Purpose}
+After reading this document user will know all the working functionality our project and he will get instructions to use our product. 
+
+
+ \subsection{Scope}
+ Scope of this document to make the process of installation and deployment clear to the end-users of the application.
+ 
+ 
+\section{Deployment on the server}
+command line arguments to deploy the website on heroku server :
+
+heroku create C Talk \\
+git push heroku master\\
+	
+	
+
+\end{document}
