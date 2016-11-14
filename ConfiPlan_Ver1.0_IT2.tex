@@ -1,0 +1,164 @@
+\documentclass[12pt]{article}
+\usepackage{hyperref}
+\usepackage[title]{appendix}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{tabu}
+\usepackage[table]{xcolor}
+\usepackage[english]{babel}
+
+
+\graphicspath{{../images/}}
+
+\setlength{\arrayrulewidth}{1mm}
+\setlength{\tabcolsep}{18pt}
+\renewcommand{\arraystretch}{1.6}
+\def\mydate{November 5, 2016}
+
+\begin{document}
+	
+	\begin{titlepage}
+		\begin{center}
+			
+			%\vspace*{1cm}
+			
+			\LARGE{\textbf{Configuration Plan}}
+			
+			\vspace{1.5cm}
+			
+			\textbf{C-TALK}\\
+			
+			\small{Version 1.0}
+			\vspace{2cm}
+		 
+        \large{\textbf{Author:}}
+			  \large{ \\ Sachin Jangid(201452060) \\Sunny Sankhlecha(201452061)}	
+			  
+			  
+			\vspace{1.5cm}
+			\mydate{}
+			
+			
+			\vspace{5cm}
+			\includegraphics[width=0.17\textwidth]{IIIt_logo.png} \\
+			\Large{Indian Institute of Information Technology Vadodara} \\
+			
+		\end{center}
+	\end{titlepage}
+	\textbf{Team members :} \\
+		\begin{center}
+		
+		\begin{tabular}{ |m{10em} m{8em} m{9em}|}
+			\hline
+			TEAM MEMBER          &   & ID        \\
+			\hline
+			Bhoopendra Singh     &   & 201452020 \\
+			Shikhar Dhing        &   & 201452021 \\
+			Venkata Sandeep      &   & 201452037 \\
+			Anjali Kumari        &   & 201452042 \\
+			Vipin Sahu           &   & 201452051 \\
+			Prahlad              &   & 201452052 \\ 
+			Sachin Jangid        &   & 201452060 \\
+			Sunny Sankhlecha     &   & 201452061 \\
+			Kenneth Tenny        &   & 201452066 \\
+			\hline
+		\end{tabular}
+		
+	\end{center}
+	\vspace{2em}
+	
+	\textbf{Revision History}
+	\begin{center}
+		\rowcolors{3}{green!80!yellow!50}{green!70!yellow!40}
+		\begin{tabular}{ | m{3em} | m{8em} | m{5em} | m{4em} | m{4em} | }
+			\hline
+			Version & Description & Date       & Authors            & Reviewers \\
+			\hline
+			1.0     & Configuration Plan    & 07/11/2016 & Sunny, Sachin & Kenneth  \\ 
+
+			\hline
+		
+		\end{tabular}
+	\end{center}
+	
+	\newpage
+	\tableofcontents
+	
+	\newpage
+\section{Introduction}
+Software configuration management (SCM) is a software engineering discipline consisting of standard processes and techniques often used by organizations to manage the changes introduced to its software products. SCM helps in identifying individual elements and configurations, tracking changes, and version selection, control, and baselining.
+
+SCM is also known as software control management. SCM aims to control changes introduced to large complex software systems through reliable version selection and version control.
+
+SCM activities include:
+\begin{itemize}
+    \item Identifying configurations, configuration items and baselines.
+    \item Review, approval and control of changes.
+    \item Tracking and reporting of such changes. 
+    \item Facilitate team interactions related to the process.
+    \item Control of Interface documentation.
+\end{itemize}
+
+\section{Management}
+SCM management gives a brief idea regarding the allocation of responsibilities and authorities and their management to both the organisation and the user as well.
+\subsection{Roles and Responsibility}
+\begin{tabular}{|c|c|c|}
+    \hline
+    Roles & Responsibility & Name
+\\  \hline
+    Project Manager & The Project Manager is charged with the \\
+    
+    &  responsibility of keeping a record of each document and what state
+\\    
+    & the document is in. In the absence of the Configuration Manager the
+  \\  
+    & work is reassigned by the Project Manager. & Kiran and Shrikant
+    \\ \hline
+    Configuration Manager & The main function of the Configuration \\
+    
+    & Manager is to organise the configuration management activities and 
+    \\
+    & keep a track of every change going on. & Karra Sandeep
+    \\ \hline
+    Developers & All the members of our team.They work according to 
+    \\
+    & configuration management plan. & IT-02
+    \\ \hline
+    \end{tabular}
+    
+\section{SCM Activities}
+SCM activities information identifies all functions and tasks required to manage the configuration of the software system as specified.
+\subsection{Configuration Itemisation}
+\textbf{DESCRIPTION} : \\
+The main purpose of Configuration Identification activity is to determine the Configuration Items. Identification is one of the most important parts of Configuration Management, as it is impossible to control something whose identity you don't know.\\
+Thus, appropiate document can be reffered whenever needed.
+\textbf{Configuration Item} : \\
+It is the most fundamental unit of a Configuration Management Plan. E.g. requirements, documentation, models, plans.
+
+\subsection{Configuration Control}
+\textbf{Description}: \\
+Software engineers will submit a change request to the Software configuration management leader. The SCM leader will then analyze the request. Once his decision has been made, he must submit the change to the software engineer of his choice, as well as updating the SCI document to accommodate the change.\\
+\textbf{Description of Configuration Control task} :\\
+\begin{itemize}
+    \item Request Analysis: \\ \\ The SCM leader will then analyze the request, using the SCI document, the project design document, and the current prototype of the software. He will base his decision on how severely the change will impact the entire system and, more importantly, on the corresponding subsystem .
+    \item Request Disapproval: \\ \\ If the SCM leader deems the change unnecessary , he will contact the software engineer who made the request and explain the reason the request was denied . The software engineer may discuss this decision with the SCM leader at this time, and submit a modified change request if a different understanding is reached .
+    \item Request Approval: \\  \\ If the SCM leader deems the change necessary , he will update the SCI document to reflect the change . This may include changes with the corresponding subsystem , and any impact it may have on the entire system. Once the SCI document has been amended, it will returned to the software engineer and he will be notified of all possible affected subsystem for surveillance after the change has been introduced .
+    
+\end{itemize}
+
+\section{Version Control}
+Whenever the system or a subsystem is updated, the program build number (version number) will be updated to reflect the change.\\ 
+\begin{itemize}
+    \item Minor version control: \\ \\ When a minor bug is fixed in the software, the hundredths place digit will increase. This change reflects a singular error being corrected, or a minor design change that has little or no impact on the surrounding subsystem.
+    \item Substantial version control: \\ \\ When a more substantial change is made to the software, the tenths place digit will increase. This change reflects the correction of many minor bugs simultaneously, or design changes that are substantial enough to affect the way the software operates internally.
+    \item Severe Version Control: \\ \\ When a severe change is made to the software, the ones place digit will increase. This change reflects any design decisions that will affect the significant portion of the subsystems interact with each other, a major change in the functionality of the software.
+\end{itemize}
+
+\section{Resources}
+\textbf{Software}:\\
+No special software is required but access to a central database containing the SQA(software quality assurance) would be preferable in communicating between the SQA team and software engineers.
+
+\section{Plan Maintenance}
+The Configuration manager monitors the Software Configuration Management plan. If new guidelines are suggested then Configuration manager needs to change the Software Configuration Plan accordingly. While the review team reviews the changes made to the existing Software Configuration Management Plan, even modifies it wherever required and then informs the team about the changes made in the Software Configuration Management plan. This Plan is referred during the starting of every phase. Appropriate changes are made if necessary and then the Plan is distributed to the team.
+
+\end{document}
