@@ -1,0 +1,288 @@
+\documentclass[12pt]{article}
+\usepackage{hyperref}
+\usepackage[title]{appendix}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{tabu}
+\usepackage[table]{xcolor}
+\usepackage[english]{babel}
+
+
+\graphicspath{{../images/}}
+
+\setlength{\arrayrulewidth}{1mm}
+\setlength{\tabcolsep}{18pt}
+\renewcommand{\arraystretch}{1.6}
+\def\mydate{November 11, 2016}
+
+\begin{document}
+	
+	\begin{titlepage}
+		\begin{center}
+			
+			%\vspace*{1cm}
+			
+			\LARGE{\textbf{System Requirement Specification(SRS)}}
+			
+			\vspace{1.5cm}
+			
+			\textbf{C-TALK}\\
+			
+			\small{Version 2.1}
+			\vspace{2cm}
+		 
+        \large{\textbf{Author:}}\\
+			  \large{ \\ Shikhar Dhing(201452021) \\Sunny Sankhlecha(201452061)}	
+			  
+			  
+			\vspace{1.5cm}
+			\mydate{}
+			
+			
+			\vspace{5cm}
+			\includegraphics[width=0.17\textwidth]{IIIt_logo.png} \\
+			\Large{Indian Institute of Information Technology Vadodara} \\
+			
+		\end{center}
+	\end{titlepage}
+	\textbf{Team members :} \\
+		\begin{center}
+		
+		\begin{tabular}{ |m{10em} m{8em} m{9em}|}
+			\hline
+			TEAM MEMBER          &   & ID        \\
+			\hline
+			Bhoopendra Singh     &   & 201452020 \\
+			Shikhar Dhing        &   & 201452021 \\
+			Venkata Sandeep      &   & 201452037 \\
+			Anjali Kumari        &   & 201452042 \\
+			Vipin Sahu           &   & 201452051 \\
+			Prahlad              &   & 201452052 \\ 
+			Sachin Jangid        &   & 201452060 \\
+			Sunny Sankhlecha     &   & 201452061 \\
+			Kenneth Tenny        &   & 201452066 \\
+			\hline
+		\end{tabular}
+		
+	\end{center}
+	\vspace{2em}
+	
+	\textbf{Revision History}
+	\begin{center}
+		\rowcolors{3}{green!80!yellow!50}{green!70!yellow!40}
+		\begin{tabular}{ | m{3em} | m{8em} | m{5em} | m{4em} | m{4em} | }
+			\hline
+			Version & Description & Date       & Authors            & Reviewers \\
+			\hline
+			2.1     & Sysytem Test Plan Report    & 11/11/2016 &  &   \\ 
+			\hline
+		
+		\end{tabular}
+	\end{center}
+	
+	\newpage
+	\tableofcontents
+	
+	\newpage
+	
+\section{Introduction}
+
+\subsection{Purpose}
+The Purpose of the Software Requirements Specification is to provide the technical, functional and non functional features, required to develop the web application and to collect and analyze, its requirements with respect to students and professors. Also, we shall predict and sort out how we hope this product will be used in order to gain a better understanding of the project, outline concepts that may be developed later, and document ideas that are being considered, but may be discarded as the product develops.This document is intended for both the stakeholders and the developers of the system. In short, the
+purpose of this SRS document is to provide a detailed overview of our software product, its parameters
+and goals.
+
+\subsection{Scope}
+There is a huge communication gap between students and professor. We are making this application to bridge this gap, by making a question and answer application where any student can ask question and get solution to his problem by professor or students. It is often seen that most students are shy to ask question in front of the class. So we are providing such students a platform to freely and anonymously ask question(s).
+
+\subsection{Target Audience}
+We are making this platform for IIIT Vadodara students and professors. 
+
+\subsection{Overview}
+
+The Requirements Specification captures system requirements for the following areas: functionality,
+usability, reliability, performance, supportability and design constraints.
+
+\subsection{References}
+\begin{itemize}
+\item IEEE Software Engineering Standards Committee, “IEEE Std 830-1998, IEEE Recommended Practice for Software Requirements Specifications”
+\item http://www.w3schools.com
+\item https://nodejs.org/en/docs/
+\end{itemize}
+
+\section{Overall Description}
+
+\subsection{Application Perspective}
+The application shall allow student/professor to sign into their account using the mail ID provided by the institute. According to the E-Mail ID, we are able to differentiate between student and professor account, so that the answers from professor will appear on top when there are more than one answer to a question. When someone answers to a question, notification will be sent to the author of the question via E-Mail. Tags will be added to the question while asking by the author of question, so that the question appears in the feed of related/interested users. 
+
+\subsection{Application Functions Overview}
+
+\begin{enumerate}
+\item Asking a question
+\item Answering a question
+\item Upvoting/Downvoting an answer
+\end{enumerate} 
+
+\subsection{User Characteristics}
+\begin{enumerate}
+\item Student : Student can ask different questions anonymously, answer a question, upvote/downvote a question.
+\item Professor: Professor can answer a question and  give a particular answer 'verified badge', if he finds it appropiate.
+\end{enumerate} 
+
+\subsection{General Constraints}
+One constraint is addition of similar/same question in same course. It may happen that both the questions get answer and another user finds out about the question having answer of lower quality. The internet connection is also a constraint for the application. Since the application fetches data from the database over the internet, it is crucial that there is an internet connection for the application to function. 
+
+\section{Use Cases}
+
+\subsection{UC-1:Login/Signup Page}
+\subsubsection{Summary}
+User will need to enter his/her college EMail ID and password to login and college E-Mail ID to signup.
+\subsubsection{Rational}
+Student can login to the software with the help of a institute provided E-Mail ID and a password. It is a high priority action, because the user has to login to the application to use its features, and only the right combination
+of the E-Mail ID and password will let them use the application. User can provide his/her E-Mail ID and can generate a password and get that on his/her E-Mail ID.
+\subsubsection{Users}
+All users who want to use the application.
+\subsubsection{Precondition}
+User must be connected to the internet.
+\subsubsection{Basic Course of Event}
+\begin{itemize}
+\item User can register himself, if he/she is new to the application.
+\item User enters his/her ID,password to login.
+\item User makes a login request to the server and credentials are verified.
+\item Application redirects to homepage/feed page.
+\end{itemize}
+
+\subsection{UC-2:Feed Page}
+\subsubsection{Summary}
+All the answers are listed here according to various factors like upvotes, recently answered, written by professor,topic of interest,etc.
+\subsubsection{Rational}
+Each user will have a personalized feed as per his/her topics of interests of answer/question pair which will be sorted according to upvotes. The answers written/verified by professors will be given higher priority.
+\subsubsection{Users}
+\begin{itemize}
+\item Students will get feed of anwers/question pair from all topics of interest.
+\item Professor will get feed of questions (of topics related to his field) to be answered.
+\end{itemize}
+\subsubsection{Precondition}
+The user must have logged in.
+\subsubsection{Basic Course of Event}
+\begin{itemize}
+\item User can share an answer on social-networking sites.
+\item Student can upvote/downvote an answer.
+\item Professor can mark an answer verified.
+\item User can report a question spam/out of context.
+\end{itemize}
+
+\subsection{UC-3:Questions List}
+\subsubsection{Summary}
+A list of questions depending on topic of interest.
+\subsubsection{Rational}
+Personalized list of questions based on topic of interest. The questions will be further sorted according to factors like newest question, unanswered question.
+\subsubsection{Users}
+All users who want to use the application.
+\subsubsection{Precondition}
+The user must have logged in.
+\subsubsection{Basic Course of Event}
+\begin{itemize}
+\item User can click on the answer button.
+\item User can then write the answer and submit the answer.
+\end{itemize}
+
+\subsection{UC-4:Notification}
+\subsubsection{Summary}
+All the important events will be notified to the user on this page.
+\subsubsection{Rational}
+If an answer is given, the author of question will get a notification. If a professor answers/verifies a question, notification will be sent to all the students who follow that topic. When a new question is added, then the notification is sent to the professor of related topic.
+\subsubsection{Users}
+All users who want to use the application.
+\subsubsection{Precondition}
+The user must have logged in and must be follwing a topic.
+\subsubsection{Basic Course of Event}
+\begin{itemize}
+\item User can see list of all the notifications.
+\item User can click on a notification link to go to related question/answer link.
+\end{itemize}
+
+\subsection{UC-5:Profile}
+\subsubsection{Summary}
+This page will show detail of a user and he/she can change his/her password, edit topics of interest.
+\subsubsection{Rational}
+User can add personal detail like bio(short description), change password, add/remove topics of interest. User cannot change or add E Mail ID.
+\subsubsection{Users}
+All users who want to use the application.
+\subsubsection{Precondition}
+The user must have logged in.
+\subsubsection{Basic Course of Event}
+\begin{itemize}
+\item User can enter the existing password to verify himself and then a new password can be created.
+\item User can add/remove topics of interest.
+\end{itemize}
+
+\subsection{UC-6:Add Question}
+\subsubsection{Summary}
+Student can post a new question and he/she can add the subject/topic related to question.
+\subsubsection{Users}
+All student who have a doubt.
+\subsubsection{Precondition}
+The user must have logged in.
+\subsubsection{Basic Course of Event}
+Student will write the question and select the subject and topic related to it.
+
+\section{Special Requirements}
+This section contains all of the functional and quality requirements of the system. It gives a detailed description of the system and all its features.
+\subsection{External Interface Requirement}
+This section provides a detailed description of all inputs into and outputs from the system. It also gives a description of the hardware, software and communication interfaces and provides basic prototypes of the user interface.
+\begin{itemize}
+\item User Interface :A new user will first see the login/signup page. If he/she has come for the first time to the web app, he/she can register himself. Otherwise they can provide the ID,password to login. User can click on forget password button so that if he/she forgets the password, new password will be send via E-Mail. Afte logging in user will be redirected to the feed page.On the top, there will be a navigation bar to link to other pages like question, profile, notification, add question.
+\item Hardware Interface:Since the web application does not have any designated hardware, it does not have any direct hardware interfaces. The hardware connection to the database server is managed by the web browser.
+\item Software Interface:The communication between the database and the web portal consists of operation concerning both reading and modifying the data.
+\end{itemize}
+
+\subsection{Functional Requirement}
+This section includes the requirements that specify all the fundamental actions of the software system.
+\begin{itemize}
+\item User Login: Given that a user has registered, then the user should be able to log in to the web application.The log-in information will be stored on the server in a database and a session will be started in browser(stored as cookies), so that in the future the user would be logged in automatically.
+\item User registration: A user can register himself by providing a E-Mail ID. Password will be mailed to that E-Mail ID and user will be able to sign in now.
+\item Forget Password: If a user forgets his/her password, a mail will be sent to the provided E-Mail ID with a new password.
+\item Profile: A user can view and edit his /her profile with options like password,topics of interest.
+\item Feed: When the user login, he/she will be redirected to this page, consisting of list of question/answer pairs personalized according to user.
+\item Question List: A list of questions that user can answer, personalized according to user's topic of interest.
+\item Notification Panel: List of all important activities happening on the platform related to the user.
+\end{itemize}
+
+\section{Non Functional Requirements}
+
+
+\subsection{Performance Requirements}
+The requirements in this section provide a detailed specification of the user interaction with the software and measurements placed on the system performance.
+\begin{itemize}
+\item System Dependability: If internet connection is lost while using the app, user should be notified by a message saying the same. So that user knows what the problem is.
+\item Relevant Feed: The feed should consist of appropiate and relevant content. Answers having better quality should tend to appear on the top.
+\end{itemize}
+
+\subsection{Security Requirements}
+The communication should be encrypted using https, so that nobody can fetch the information of the user. The password should be encrypted before storing. The system should preserve the anonymity of question author.
+
+\subsection{Design Constraints}
+This section includes the design constraints on the software caused by the hardware.
+\begin{itemize}
+\item Modern Browser : The device must be having a latest browser which requires atleast 512MB RAM.
+\end{itemize}
+
+\subsection{Software system attributes}
+The requirements in this section specify the required availability, scalability, security and maintainability of the software system.
+\begin{itemize}
+\item Scalability : The Application should perform smoothly even if the number of users increased drastically.
+\item Availability : The server should be up and running 24/7.
+\item Maintainability : New changes could be introduced into the web application easily. The code should be understandable to any new programmer, so that bugs could be identified and fixed easily.
+\end{itemize}
+
+\section{Validation Criteria}
+For Validation of this application the final product should satisfy all the functionalities described in this SRS document.In final product users must be able to create their account, to login with his/her account, to ask a question, answer a question.
+
+\section{Future Functionalities}
+\begin{itemize}
+\item Prominent search feature: When a user wants to ask a question existing and related questions should be seen.
+\item Editing of answer later by the author: A user can edit his/her answer after posting the answer at some later point of time.
+\end{itemize}
+
+\end{document}
