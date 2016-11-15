@@ -13,7 +13,7 @@
 \setlength{\arrayrulewidth}{1mm}
 \setlength{\tabcolsep}{18pt}
 \renewcommand{\arraystretch}{1.6}
-\def\mydate{November 11, 2016}
+\def\mydate{September 24, 2016}
 
 \begin{document}
 	
@@ -74,7 +74,7 @@
 			\hline
 			Version & Description & Date       & Authors            & Reviewers \\
 			\hline
-			2.1     & System Requirement Specification(SRS)    & 11/11/2016 &  &   \\ 
+			2.1     & System Requirement Specification(SRS)    & 25/09/2016 & Shikhar,Sunny & Anjali   \\ 
 			\hline
 		
 		\end{tabular}
