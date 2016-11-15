@@ -13,7 +13,6 @@
 \setlength{\arrayrulewidth}{1mm}
 \setlength{\tabcolsep}{18pt}
 \renewcommand{\arraystretch}{1.6}
-\def\mydate{September 24, 2016}
 
 \begin{document}
 	
@@ -72,9 +71,9 @@
 		\rowcolors{3}{green!80!yellow!50}{green!70!yellow!40}
 		\begin{tabular}{ | m{3em} | m{8em} | m{5em} | m{4em} | m{4em} | }
 			\hline
-			Version & Description & Date       & Authors            & Reviewers \\
+			Version & Description       & Authors            & Reviewers \\
 			\hline
-			2.1     & System Requirement Specification(SRS)    & 25/09/2016 & Shikhar,Sunny & Anjali   \\ 
+			2.1     & System Requirement Specification(SRS)     & Shikhar,Sunny & Anjali   \\ 
 			\hline
 		
 		\end{tabular}
